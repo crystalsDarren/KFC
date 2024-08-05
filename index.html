@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kfc Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!---Swiper---->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" rel="stylesheet">
+    <!---Montserrat cdn--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav>
+          <div class="container nav_container">
+             <h3><a href="index.html">KFC</a></h3>
+             <ul class="nav_list">
+                 <li><a href="./Pages/about.html">about us</a></li>
+                 <li><a href="./Pages/findus.html">find us</a></li>
+                 <li><a href="./Pages/campaign.html">campaign</a></li>
+                 <li><a href="./Pages/profile.html"><i class="uil uil-user icon"></i></a></li>
+                 <li><a href="./Pages/profile.html"><i class="uil uil-shopping-cart icon"></i></a></li>
+             </ul>
+          </div>
+     </nav>
+    <header>
+          <div class="container header_container">
+              <div class="header_informations">
+                  <h1>bargain bucket menu campaign</h1>
+                  <p>Original Recipe chicken and fries, and plenty of it.
+                    Sometimes that's all you need to turn your average day into a great one.
+                  </p>
+                      <button>ORDER NOW</button>
+              </div>
+              <div class="header__image">
+                <img src="images/main.png" alt="">
+              </div>
+          </div>
+    </header>
+    <section class="container mySwiper">
+         <button class="container button">Menus</button>
+         <div class="section__container swiper-wrapper">
+            
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (2).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (3).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (5).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (4).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (5).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (6).png" alt="">
+                    </article>
+             
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (7).png" alt="">
+                    </article>
+             
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (8).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (9).png" alt="">
+                    </article>
+                    <article class="article swiper-slide">
+                        <img src="images/pngwing.com (10).png" alt="">
+                    </article>
+                    <div class="swiper-pagination"></div>
+         </div>
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            600: {
+                slidesPerView: 2,
+            }
+          }
+        });
+      </script>
+
+
+</body>
+</html>

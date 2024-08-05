@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root {
+    --kfc-red: #E4002B;
+    --kfc-white: #FFFFFF;
+    --kfc-black: #000000;
+    --kfc-light-red:  rgb(247, 51, 38);
+    --kfc-white: #FFFFFF;
+    --kfc-black: #000000;
+    --kfc-gray: #CCCCCC;
+    --kfc-gray: #CCCCCC;
+    --color-bg: #021845;        /* Primary color, e.g., school color */
+    --secondary-color: #ffcc00;      /* Secondary color */
+    --accent-color: #ff5722;         /* Accent color for highlights */
+    --background-color: #ffffff;     /* Background color */
+    --text-color: #333333;           /* Main text color */
+    --muted-text-color: #666666;     /* Muted text color */
+    --link-color: #0044cc;           /* Link color */
+    --link-hover-color: #003399;     /* Link hover color */
+    --border-color: #dddddd;         /* Border color */
+    --error-color: #ff0000;          /* Error color for validation messages */
+    --success-color: #4caf50;        /* Success color for notifications */
+    --secondary-color: #c68642; /* Warm Coffee Brown */
+    --accent-color: #f4ede8;    /* Creamy Beige */
+    --dark-text: #2c2926;       /* Dark Charcoal */
+    --light-text: #f8f8f8;      /* Light Grey */
+    --background-color: #e3dcd9;/* Light Coffee Brown */
+    --overlay-color: rgba(74, 44, 35, 0.8); /* Semi-transparent Rich Coffee Brown for overlays */
+    --button-hover-color: #8e5028; /* Darker Coffee Brown for button hover effect */
+    --link-color: #9c6641;     /* Coffee Brown for links */
+    --link-hover-color: #6d431e;/* Darker Coffee Brown for link hover effect */
+    --dark-brown: #3e2723;          /* Dark Brown */
+  --medium-brown: #5d4037;        /* Medium Brown */
+  --light-brown: #8d6e63;         /* Light Brown */
+  --extra-light-brown: #bcaaa4;   /* Extra Light Brown */
+  --dark-gray: #616161;           /* Dark Gray */
+  --medium-gray: #9e9e9e;         /* Medium Gray */
+  --light-gray: #bdbdbd;          /* Light Gray */
+  --extra-light-gray: #e0e0e0;    /* Extra Light Gray */
+  --cream: #fff3e0;               /* Cream */
+  --dark-orange: #ff7043;         /* Dark Orange */
+  --medium-orange: #ff8a65;       /* Medium Orange */
+  --light-orange: #ffab91;        /* Light Orange */
+  --peach: #ffe0b2;               /* Peach */
+  --dark-green: #388e3c;          /* Dark Green */
+  --medium-green: #12fa1a;        /* Medium Green */
+  --light-green: #81c784;         /* Light Green */
+  --teal: #4db6ac;                /* Teal */
+  --dark-blue: #1976d2;           /* Dark Blue */
+  --medium-blue: #2196f3;         /* Medium Blue */
+    --primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    font-family: var(--primary-font);
+    background-color: var(--kfc-white);
+    color: var(--kfc-black);
+  }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    z-index: 4;
+}
+.nav_container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+   
+    justify-content: space-between;
+}
+.nav_container > h3 > a{
+    color: var(--kfc-white);
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight:1000;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav_list > li a{
+   color:  var(--kfc-white);
+   text-transform: uppercase;
+}
+
+.icon{
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--kfc-white);
+    color: var(--kfc-red);
+    border-radius: 20px;
+    padding: 0.1rem;
+    transition: all 400ms ease-in-out;
+}
+.icon:hover{
+    background-color: var(--kfc-red);
+    color: var(--kfc-white);
+}
+
+
+header{
+    background-color: red ;
+    height: 95vh;
+    background-image: url(images/logosv.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left bottom;
+    clip-path: fill-box;
+    overflow: hidden;
+}
+.header_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    top: 5rem;
+}
+.header_container > .header_informations > h1{
+    color: var(--kfc-white);
+    text-transform: uppercase ;
+}
+.header_informations > p{
+    line-height: 1.3rem;
+    color: var(--kfc-white);
+}
+.header_container >.header__image> img{
+    width: 500px;
+    top: 6rem;
+    right: 80px;
+    object-fit: fill;
+    position: relative;
+   
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.header__image{
+    background-color: var(--kfc-red) ;
+    transform: rotate(35deg);
+    display: flex;  
+    height: 560px;
+    align-items: center;
+    width: 260px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4.5rem;
+}
+ .header_informations > button{
+    padding: 0.8rem;
+    color: var(--kfc-white);
+    z-index: 12;
+    margin-top: 5rem;
+    border: 1px solid var(--kfc-white);
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all  4000ms  step-start;
+}
+ .header_informations > button:hover{
+    color: var(--kfc-white);
+    border: 1px solid var(--kfc-red);
+}
+section{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+ }
+ section > .button{
+     width: 150px;
+     padding: 0.8rem;
+     position: absolute;
+     bottom: 0.1rem;
+     border-radius: 15px;
+     margin-left: 23rem;
+     border: none;
+     font-size: larger;
+     background-color: var(--dark-orange);
+     color: var(--cream);
+ }
+.section__container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 12rem;
+    
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+.section__container > .article > img{
+    width: 150px;
+}
+article{
+    background-color: var(--background-color);
+    top: 3rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+footer{
+    height: 10rem;
+}
